@@ -46,7 +46,7 @@ export default class App extends Component {
       .filter(image => {
         if (!this.state.third) return true;
 
-        return image.keyword.includes(this.state.third)
+        return image.title.toLowerCase().includes(this.state.third.toLowerCase()) || image.keyword.toLowerCase().includes(this.state.third.toLowerCase()) || image.description.toLowerCase().includes(this.state.third.toLowerCase())
       });
 
     

@@ -6,7 +6,7 @@ export default class ImageItem extends Component {
         return (
             <div>
 
-                This is my Image Item.
+                <img src={this.props.image.url} alt={this.props.image.description} />
 
             </div>
         )

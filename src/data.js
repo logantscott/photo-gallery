@@ -129,7 +129,7 @@ const images = [
     },
     {
       url:
-        "https://i.imgur.com/3WI9BKD.jpg",
+        "https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg",
       title: "Happy Jackson's Chameleon",
       description: "These are really common in Hawaii",
       keyword: "chameleon",

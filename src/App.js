@@ -3,21 +3,54 @@ import './App.css';
 import images from './data.js';
 import Header from './Header.js';
 import ImageList from './ImageList.js';
-import OptionsKeywords from './OptionsKeywords.js';
+import { Keywords, Horns } from './Options.js';
 
 export default class App extends Component {
-  state = { selected: null };
+  state = { selected: null,
+            horns: null };
 
   render() {
+    let hornsOptions = images
+      .map(image => {
+        return image.horns
+      })
+    
+    hornsOptions = hornsOptions
+      .filter((horn, i) => {
+        return hornsOptions.indexOf(horn) === i
+      })
+
+      let keywordOptions = images
+        .map(image => {
+          return image.keyword
+        })
+
+      keywordOptions = keywordOptions
+        .filter((keyword, i) => {
+          return keywordOptions.indexOf(keyword) === i
+        })
+        .sort()
+
     const imageNodes = images
       .filter(image => {
         if (!this.state.selected) return true;
 
-        return image.keyword === this.state.selected;
+        return image.keyword === this.state.selected 
+      })
+      .filter(image => {
+        if (!this.state.horns) return true;
+
+        return Number(this.state.horns) === image.horns
       });
+
+    
 
     const handleChange = e => {
       this.setState({ selected: e.target.value });
+    };
+
+    const handleHornsChange = e => {
+      this.setState({ horns: e.target.value });
     };
 
     return (
@@ -27,11 +60,19 @@ export default class App extends Component {
 
             <select className="images-keyword-filter" onChange={handleChange}>
               <option value="" defaultValue>
-                All Types
+                All Keywords
               </option>
-              {images.map((image, i) => {
-                return <OptionsKeywords image={image} key={i} />
+              {keywordOptions.map((keyword, i) => {
+                return <Keywords keyword={keyword} key={i} />
               })}
+            </select>
+            <select className="images-horns-filter" onChange={handleHornsChange}>
+              <option value="" defaultValue>
+                All Horns
+              </option>
+              {hornsOptions.map((horn, i) => (
+                <Horns horn={horn} key={i} />
+              ))}
             </select>
           </section>
         <ImageList images={imageNodes} />

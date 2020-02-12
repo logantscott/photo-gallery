@@ -46,7 +46,7 @@ export default class App extends Component {
       .filter(image => {
         if (!this.state.third) return true;
 
-        return (Number(this.state.third)) !== image.horns
+        return image.keyword.includes(this.state.third)
       });
 
     
@@ -86,15 +86,9 @@ export default class App extends Component {
                 <Horns horn={horn} key={i} />
               ))}
             </select>
-            <label> Not Horns: </label>
-            <select className="images-third-filter" onChange={handleThirdChange}>
-              <option value="" defaultValue>
-                All Horns
-              </option>
-              {hornsOptions.map((horn, i) => (
-                <Horns horn={horn} key={i} />
-              ))}
-            </select>
+            <label> Includes: </label>
+            <input type="text" className="images-third-filter" onChange={handleThirdChange}>
+            </input>
           </section>
         <ImageList images={imageNodes} />
       </div>

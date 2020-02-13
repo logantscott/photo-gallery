@@ -4,11 +4,21 @@ import images from './data.js';
 import Header from './Header.js';
 import ImageList from './ImageList.js';
 import { Keywords, Horns } from './Options.js';
+import request from 'superagent';
 
 export default class App extends Component {
   state = { selected: null,
             horns: null,
-            third: null };
+            third: null,
+            people: null };
+
+  async componentDidMount() {
+    const query = 'https://swapi.co/api/people/';
+    const data = await request.get(query)
+
+    this.setState({people: data.body.results});
+    console.log(this.state.people)
+  }
 
   render() {
     let hornsOptions = images

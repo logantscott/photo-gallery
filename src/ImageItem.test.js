@@ -1,10 +1,10 @@
 import React from "react";
-import App from "./App.js";
+import ImageItem from "./ImageItem.js";
 import renderer from "react-test-renderer";
 
-test('renders App.js correctly', () => {
+test('renders ImageItem.js correctly', () => {
   const tree = renderer
-    .create(<App />)
+    .create(<ImageItem image={[]} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

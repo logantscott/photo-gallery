@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App.js correctly 1`] = `
+<div
+  className="App"
+>
+  <header>
+    This is my header.
+  </header>
+  <section
+    className="options"
+  >
+    <label>
+      Keyword: 
+    </label>
+    <select
+      className="images-keyword-filter"
+      onChange={[Function]}
+    >
+      <option
+        defaultValue={true}
+        value=""
+      >
+        All Keywords
+      </option>
+      <option
+        value="addax"
+      >
+        addax
+      </option>
+      <option
+        value="chameleon"
+      >
+        chameleon
+      </option>
+      <option
+        value="dragon"
+      >
+        dragon
+      </option>
+      <option
+        value="lizard"
+      >
+        lizard
+      </option>
+      <option
+        value="markhor"
+      >
+        markhor
+      </option>
+      <option
+        value="mouflon"
+      >
+        mouflon
+      </option>
+      <option
+        value="narwhal"
+      >
+        narwhal
+      </option>
+      <option
+        value="rhino"
+      >
+        rhino
+      </option>
+      <option
+        value="triceratops"
+      >
+        triceratops
+      </option>
+      <option
+        value="unicorn"
+      >
+        unicorn
+      </option>
+      <option
+        value="unilego"
+      >
+        unilego
+      </option>
+    </select>
+    <label>
+       Horns: 
+    </label>
+    <select
+      className="images-horns-filter"
+      onChange={[Function]}
+    >
+      <option
+        defaultValue={true}
+        value=""
+      >
+        All Horns
+      </option>
+      <option
+        value={1}
+      >
+        1
+      </option>
+      <option
+        value={2}
+      >
+        2
+      </option>
+      <option
+        value={3}
+      >
+        3
+      </option>
+      <option
+        value={100}
+      >
+        100
+      </option>
+    </select>
+    <label>
+       Includes: 
+    </label>
+    <input
+      className="images-third-filter"
+      onChange={[Function]}
+      type="text"
+    />
+  </section>
+  <div
+    className="grid-container"
+    id="image-list"
+  >
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="A unicorn and a narwhal nuzzling their horns"
+        src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
+      />
+      <h3>
+        UniWhal
+      </h3>
+      <p>
+        A unicorn and a narwhal nuzzling their horns
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Mother (or father) rhino with two babies"
+        src="https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80"
+      />
+      <h3>
+        Rhino Family
+      </h3>
+      <p>
+        Mother (or father) rhino with two babies
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Someone wearing a creepy unicorn head mask"
+        src="https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"
+      />
+      <h3>
+        Unicorn Head
+      </h3>
+      <p>
+        Someone wearing a creepy unicorn head mask
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Lego figurine dressed in a unicorn outfit"
+        src="https://images.unsplash.com/photo-1518946222227-364f22132616?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4836a6fca62e7dce9324346bacfde085&auto=format&fit=crop&w=2534&q=80"
+      />
+      <h3>
+        UniLego
+      </h3>
+      <p>
+        Lego figurine dressed in a unicorn outfit
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="A narwhal is basically a unicorn after all, right?"
+        src="https://i.pinimg.com/736x/b4/61/06/b46106830b841017ea59870b27ec18dc--narwhals-a-unicorn.jpg"
+      />
+      <h3>
+        Basically a unicorn
+      </h3>
+      <p>
+        A narwhal is basically a unicorn after all, right?
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="The truth behind narwhals"
+        src="https://i.pinimg.com/originals/16/cf/2a/16cf2a0b3fd51b9bee08bb6296193b75.jpg"
+      />
+      <h3>
+        #truth
+      </h3>
+      <p>
+        The truth behind narwhals
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="This is actually a figurine but it looks kinda real"
+        src="https://secure.img1-ag.wfcdn.com/im/17007094/resize-h800%5Ecompr-r85/3589/35892451/Baby+Rhino+Figurine.jpg"
+      />
+      <h3>
+        Baby Rhino
+      </h3>
+      <p>
+        This is actually a figurine but it looks kinda real
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Three horns but still, horns. And who doesn't like The Land Before Time?"
+        src="https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003"
+      />
+      <h3>
+        Cera
+      </h3>
+      <p>
+        Three horns but still, horns. And who doesn't like The Land Before Time?
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="A woman wearing a blue narwhal costume"
+        src="https://ae01.alicdn.com/kf/HTB18GwSQVXXXXaZaXXXq6xXFXXXh/Animal-Cosplay-Costume-Narwhal-Onesie-Mens-Womens-Cartoon-Whale-Pajamas.jpg"
+      />
+      <h3>
+        Narwhal costume
+      </h3>
+      <p>
+        A woman wearing a blue narwhal costume
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Mascots have to get their costumes somewhere"
+        src="https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg"
+      />
+      <h3>
+        Rhino costume
+      </h3>
+      <p>
+        Mascots have to get their costumes somewhere
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="I believe in unicorns, do you?"
+        src="https://www.tinselbox.com/wp-content/uploads/2018/03/I-BELIEVE-IN-UNICORNS-FREE-PRINTABLE-WATERCOLOR-7-of-1.jpg"
+      />
+      <h3>
+        Believe
+      </h3>
+      <p>
+        I believe in unicorns, do you?
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg"
+      />
+      <h3>
+        Markhor
+      </h3>
+      <p>
+        These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Even the babies are adorable"
+        src="http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi"
+      />
+      <h3>
+        Baby markhor
+      </h3>
+      <p>
+        Even the babies are adorable
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Those horns though"
+        src="https://cdn.modernfarmer.com/wp-content/uploads/2014/08/28476658_9c97f35096_o.jpg"
+      />
+      <h3>
+        Mouflon
+      </h3>
+      <p>
+        Those horns though
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="This guy is basically extinct but survives well in captivity, so they're frequently found in zoos"
+        src="https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg"
+      />
+      <h3>
+        Addax
+      </h3>
+      <p>
+        This guy is basically extinct but survives well in captivity, so they're frequently found in zoos
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="The cuteness that is a baby mouflon asleep"
+        src="https://cbsnews3.cbsistatic.com/hub/i/r/2013/03/05/5b414225-a645-11e2-a3f0-029118418759/thumbnail/620x350/2d4cf24685b45c22912e64d2004fec8d/Baby_Mouflon_Wild_Sheep.jpg"
+      />
+      <h3>
+        Baby mouflon
+      </h3>
+      <p>
+        The cuteness that is a baby mouflon asleep
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="These are really common in Hawaii"
+        src="https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg"
+      />
+      <h3>
+        Happy Jackson's Chameleon
+      </h3>
+      <p>
+        These are really common in Hawaii
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="This one is very serious."
+        src="https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg"
+      />
+      <h3>
+        Serious Jackson's Chameleon
+      </h3>
+      <p>
+        This one is very serious.
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Fave food: ants"
+        src="https://www.nps.gov/band/learn/nature/images/short-horned-lizard-open-mouth-18.jpg?maxwidth=650&autorotate=false"
+      />
+      <h3>
+        Horned Lizard
+      </h3>
+      <p>
+        Fave food: ants
+      </p>
+    </div>
+    <div
+      className="grid-item"
+    >
+      <img
+        alt="Fan illustration of Smaug from 'The Hobbit'"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Smaug_par_David_Demaret.jpg/290px-Smaug_par_David_Demaret.jpg"
+      />
+      <h3>
+        Smaug
+      </h3>
+      <p>
+        Fan illustration of Smaug from 'The Hobbit'
+      </p>
+    </div>
+  </div>
+</div>
+`;
